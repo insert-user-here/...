@@ -1,720 +1,225 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>Dreadhead Parkour: Play in Browser, Fullscreen, Ad-Free</title>
-		 <meta name="description" content="Dreadhead Parkour Unblocked: Play in fullscreen, ad-free, right in your browser! Enjoy exciting, unpredictable soccer matches with friends. Kick off the fun now!">
-						<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/jquery-comments.css" />
-		<link rel="stylesheet" type="text/css" href="css/user.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/custom.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-		<!-- Font Awesome icons (free version)-->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<!-- Google fonts-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <!-- external -->
+    <script type="text/javascript">
+      window.cookieconsent_options = {
+        message: "Unsurprisingly, this website uses cookies for ads and traffic analysis.",
+        dismiss: "Got it!",
+        learnMore: "Learn more",
+        link: "//orteil.dashnet.org/cookieconsentpolicy.html",
+        target: "_blank",
+        theme: "cookieconsent.css",
+        domain: "dashnet.org",
+      };
+    </script>
 
+    <script type="text/javascript" src="cookieconsent.min.js"></script>
 
+    <!--<link href="https://fonts.googleapis.com/css?family=Kavoon&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+    <title>Cookie Clicker - topVAZ</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <!--
+      Code and graphics copyright Orteil, 2013-2022
+      Feel free to alter this code to your liking, but please do not re-host it, do not profit from it and do not present it as your own.
+    -->
+    <meta name="viewport" content="width=900, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="base64.js"></script>
+    <script src="/js/main.js"></script>
 
+    <script>
+      var VERSION = 2.048;
+      var BETA = 0;
+      var App = typeof App === "undefined" ? 0 : App;
+    </script>
 
-</head>
-	<body id="page-top" style="background: url('images/background1.png'); background-size: cover;">
-		<!-- Navigation-->
-		<nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
-			<div class="container">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand js-scroll-trigger" href="/">
-          <strong>DreadheadParkour.Github.io</strong>
-        </a>
-	
+    <link href="style.css?v=5" rel="stylesheet" type="text/css" />
+    <script src="main.js?v=5"></script>
 
-				<div class="navbar-collapse collapse" id="nav-menu">
+    <!-- ad -->
+    <script src="showads.js"></script>
+    <!-- /ad -->
 
-		
+    <!--[if IE]>
+      <style type="text/css">
+        #ifIE9 {
+          display: block;
+        }
+      </style>
+    <![endif]-->
 
-				</div>
-				<div class="d-none d-lg-block">
-		        
-		        <ul class="navbar-nav">
-		        	
-<!-- 		        	
-		    	 		<li class="nav-item "><a class="nav-link " href="/category/car.html">Car</a></li>
-		            <li class="nav-item "><a class="nav-link " href="/category/sports.html">Sports</a></li>            
-		            <li class="nav-item "><a class="nav-link " href="/category/skill.html">Skill</a></li>            
-		            <li class="nav-item "><a class="nav-link " href="/category/running.html">Running</a></li>
-
-		          -->
-
-          </ul>
-
-				</div>
-			</div>
-		</nav>		
-
-
-
-
-
-<div class="container">
-
-<div class="row">
-      <div class="col-md-10">
-          	<div class="game-container">
-          		<div class="game-content" data-id="169">
-          			<div id="allow_mobile_version"></div>			
-               <!-- 
-                <div id="mobile-play" style="display: none;">
-          				<div class="mobile-thumb-play">
-          					<img src="#">
-          				</div>
-          				<div id="mobile-play-btn">
-          					<i class="bi bi-play-circle-fill"></i>
-          				</div>
-          			</div> -->
-
-
-
-          			<div class="game-iframe-container" id="game-player">
-          				<div id="mobile-back-button" draggable="true">
-          					<i class="bi bi-x-circle-fill"></i>
-          				</div>
-          				<iframe class="game-iframe" id="game-area" src="https://dreadheadparkour.github.io/file/" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen=""></iframe>
-          			</div>
-          		</div>
-
-
-          		<div class="game-info">
-          			<div class="header-left">
-          				<h1 class="single-title">Dreadhead Parkour Unblocked</h1>
-
-
-          			</div>
-          			<div class="header-right">
-
-
-          				<div class="b-action2">
-          		
-          					<a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen</a>
-          				</div>
-          			</div>
-          		</div>
-          	</div>
-
-      </div><!-- end col-9 -->
-      
-
-      <div class="col-md-2 ">
-
-        <div align="center">
-          <!-- <img src="https://storage.googleapis.com/website-production/uploads/2023/01/liveplan-banner-ad-example.png" width="300px" height="600px" alt="banner"> -->
-          <br>
-
-         <div class="col-lg-12 col-md-4 col-6 list-grid">
-               <a title="Retro Bowl" rel="nofollow" target="_blank" href="https://classroom6x.github.io">
-                <div class="list-game">
-                  <div class="list-thumbnail"><img src="https://h5cdn.github.io/media/retro-bowl.png" class="small-thumb img-rounded"></div>
-                </div>
-              </a>
-            </div>  
-            <br>
-
-            <div class="col-lg-12 col-md-4 col-6 list-grid">
-               <a  title="Moneky Mart" rel="nofollow" target="_blank" href="https://classroom6x.github.io/launch/monkey-mart.html">
-                <div class="list-game">
-                  <div class="list-thumbnail"><img src="https://h5cdn.github.io/media/monkey-mart.png" class="small-thumb img-rounded"></div>
-                </div>
-              </a>
-            </div>  
-            <br>
-
-            <div class="col-lg-12 col-md-4 col-6 list-grid">
-              <a  title="Drive Mad" rel="nofollow" target="_blank" href="https://classroom6x.github.io/launch/drive-mad.html">
-                <div class="list-game">
-                  <div class="list-thumbnail"><img src="https://h5cdn.github.io/media/drive-mad.png" class="small-thumb img-rounded"></div>
-                </div>
-              </a>
-            </div>  
-
-
-
+    <!--[if lt IE9]><script src="excanvas.compiled.js"></script><![endif]-->
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="topBar">
+        <div><b style="font-weight: bold;">Cookie Clicker</b>&trade; &copy; <a href="//orteil.dashnet.org" target="_blank" id="topbarOrteil">Orteil</a>, 2022 - <a href="//dashnet.org" target="_blank" id="topbarDashnet">DashNet</a></div>
+        <div><a href="https://twitter.com/orteil42" target="_blank" id="topbarTwitter">twitter</a></div>
+        <div><a href="https://orteil42.tumblr.com" target="_blank" id="topbarTumblr">tumblr</a></div>
+        <div style="position: relative;">
+          <div style="width: 22px; height: 32px; background: url(img/discord.png); position: absolute; left: 0px; top: 0px; pointer-events: none;"></div>
+          <a href="https://discordapp.com/invite/cookie" target="_blank" style="padding-left: 16px;" id="topbarDiscord">Discord</a>
+        </div>
+        <div style="position: relative;">
+          <div style="width: 25px; height: 32px; background: url(img/weeHoodie.png); position: absolute; left: -2px; top: 0px; pointer-events: none;"></div>
+          <a class="blueLink" href="http://www.redbubble.com/people/dashnet" target="_blank" style="padding-left: 12px;" id="topbarMerch">Merch!</a>
+        </div>
+        <div style="position: relative;">
+          <div style="width: 22px; height: 32px; background: url(img/patreon.png); position: absolute; left: 0px; top: 0px; pointer-events: none;"></div>
+          <a class="orangeLink" href="https://www.patreon.com/dashnet" target="_blank" style="padding-left: 16px;" id="topbarPatreon">Patreon</a>
+        </div>
+        <div style="position: relative; display: none; font-weight: bold;" id="heralds">
+          <div style="position: absolute; top: -4px; width: 31px; height: 39px; background: url(img/heraldFlag.png); left: 50%; margin-left: -15px; pointer-events: none;"></div>
+          <div id="heraldsAmount" style="position: relative; z-index: 10; text-shadow: 0px 1px 0px #000, 0px 0px 6px #ff00e4; color: #fff;">-</div>
+        </div>
+        <div><a class="lightblueLink" style="font-weight: bold;" href="https://play.google.com/store/apps/details?id=org.dashnet.cookieclicker" target="_blank" id="topbarMobileCC">Cookie Clicker for Android</a></div>
+        <div><a class="lightblueLink" style="font-weight: bold;" href="https://store.steampowered.com/app/1454400/Cookie_Clicker/" target="_blank" id="topbarSteamCC">Cookie Clicker on Steam</a></div>
+        <div><a href="//orteil.dashnet.org/randomgen/" target="_blank" id="topbarRandomgen">RandomGen</a></div>
+        <div><a href="//orteil.dashnet.org/igm/" target="_blank" id="topbarIGM">Idle Game Maker</a></div>
+        <div style="float: right; position: relative;">
+          <div id="tinyglobe" style="position: absolute; top: -4px; width: 22px; height: 22px; background: url(img/tinyglobeSheet.gif); right: 4px; top: 4px; pointer-events: none;"></div>
+          <a
+            id="changeLanguage"
+            style="font-variant: small-caps; padding-right: 20px;"
+            onmouseover="INTERVAL_TINYGLOBE=setInterval(function(){var tinyglobe=document.getElementById('tinyglobe');tinyglobe.style.backgroundPosition=(parseInt(tinyglobe.style.backgroundPosition)-22)+'px';},30);"
+            onmouseout="clearInterval(INTERVAL_TINYGLOBE);"
+          >
+            Change language
+          </a>
+          <script>
+            document.getElementById("tinyglobe").style.backgroundPosition = -[0, 19, 27][Math.floor(Math.random() * 3)] * 22 + "px";
+          </script>
+        </div>
+        <div id="links" class="hoverer">
+          Other versions
+          <div class="hoverable">
+            <a href="../" target="_blank" id="linkVersionLive">Live version</a>
+            <a href="beta" target="_blank" id="linkVersionBeta">Try the beta! (not working)</a>
+            <a href="//orteil.dashnet.org/cookieclicker/v10466" target="_blank" id="linkVersionOld">v. 1.0466</a>
+            <a href="//orteil.dashnet.org/experiments/cookie/" target="_blank">Classic</a>
+          </div>
         </div>
       </div>
+      <div id="game">
+        <div id="versionNumber" class="title"></div>
+        <script>
+          document.getElementById("versionNumber").innerHTML = "v. " + VERSION;
+        </script>
+        <div id="offGameMessageWrap">
+          <div id="offGameMessage">
+            <div id="loader">
+              <div class="spinnyBig"></div>
+              <div class="spinnySmall"></div>
+              <div id="loading" class="title">Loading...</div>
+              <div id="failedToLoad" class="title">
+                This is taking longer than expected...<br />
+                <div style="font-size: 65%; line-height: 120%;">
+                  <!-- error -->Slow connection? If not, please make sure your javascript is enabled, then refresh.<br />
+                  If problems persist, this might be on our side - wait a few minutes, then hit ctrl+f5!<br /><!-- /error -->
+                  If you can open a issue in the github so we know this happened!
+                </div>
+              </div>
+              <div id="ifIE9" class="title" style="font-size: 100%; line-height: 120%;">
+                Your browser may not be recent enough to run Cookie Clicker.<br />
+                You might want to update, or switch to a more modern browser such as Chrome or Firefox.
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <canvas id="backgroundCanvas"></canvas>
 
+        <div id="goldenCookie" class="goldenCookie"></div>
+        <div id="seasonPopup" class="seasonPopup"></div>
+        <div id="shimmers"></div>
+        <div id="alert"></div>
+        <div id="particles"></div>
+        <div id="sparkles" class="sparkles"></div>
+        <div id="notes"></div>
+        <div id="darken"></div>
+        <div id="toggleBox" class="framed prompt"></div>
+        <div id="promptAnchor">
+          <div id="prompt" class="framed">
+            <div id="promptContent"></div>
+            <div id="promptClose" class="close" style="display: none;" onclick="PlaySound('snd/tickOff.mp3');Game.ClosePrompt();">x</div>
+          </div>
+        </div>
+        <div id="ascend">
+          <div id="ascendBG"></div>
+          <div id="ascendZoomable">
+            <div id="ascendContent"><div id="ascendUpgrades" style="position: absolute;"></div></div>
+          </div>
+          <div id="ascendOverlay"></div>
+        </div>
 
-  </div>
+        <div id="debug">
+          <div id="devConsole" class="framed"></div>
+          <div id="debugLog"></div>
+        </div>
 
+        <div id="sectionLeft" class="inset">
+          <canvas id="backgroundLeftCanvas" style="z-index: 5;"></canvas>
+          <div class="blackFiller"></div>
+          <div class="blackGradient"></div>
+          <div id="sectionLeftInfo"></div>
+          <div id="cookies" class="title"></div>
+          <div id="bakeryNameAnchor"><div id="bakeryName" class="title"></div></div>
+          <div id="specialPopup" class="framed prompt offScreen"></div>
+          <div id="buffs" class="crateBox"></div>
+          <div id="cookieAnchor">
+            <button id="bigCookie"></button>
+            <div id="cookieNumbers"></div>
+          </div>
+          <div id="sectionLeftExtra"></div>
+        </div>
 
+        <div class="separatorLeft" id="leftBeam"></div>
+        <div class="separatorRight" id="rightBeam"></div>
 
+        <div id="sectionMiddle" class="inset">
+          <div id="comments" class="inset title">
+            <div id="prefsButton" class="panelButton"><div class="subButton">Options</div></div>
+            <div id="statsButton" class="panelButton"><div>Stats</div></div>
+            <div id="logButton" class="panelButton">
+              <div>Info</div>
+              <div id="checkForUpdate">New update!</div>
+            </div>
+            <div id="legacyButton" class="panelButton">
+              <div class="subButton">Legacy</div>
+              <div id="ascendMeterContainer" class="smallFramed meterContainer"><div id="ascendMeter" class="meter filling"></div></div>
+              <div class="roundedPanel" id="ascendNumber"></div>
+              <div id="ascendTooltip" class="framed"></div>
+            </div>
+            <div id="commentsText">
+              <div id="commentsText1" class="commentsText"></div>
+              <div id="commentsText2" class="commentsText"></div>
+            </div>
+            <div class="separatorBottom"></div>
+          </div>
+          <div id="centerArea">
+            <div id="buildingsTitle" class="inset title zoneTitle">Buildings</div>
+            <div id="buildingsMaster"></div>
+            <div id="rows"></div>
+            <div id="menu"></div>
+          </div>
+        </div>
 
+        <div id="sectionRight" class="inset">
+          <div id="store">
+            <div id="storeTitle" class="inset title zoneTitle">Store</div>
+            <div id="toggleUpgrades" class="storeSection upgradeBox"></div>
+            <div id="techUpgrades" class="storeSection upgradeBox"></div>
+            <div id="vaultUpgrades" class="storeSection upgradeBox"></div>
+            <div id="upgrades" class="storeSection upgradeBox"></div>
+            <div id="products" class="storeSection"></div>
+          </div>
+        </div>
 
-
-	<div class="banner-ad-wrapper"><div class="banner-ad-content" style="padding: 20px 0; text-align: center;">
-		<!-- ads -->
-
-
-
-		</div>
-
-
-
-	</div>	
-
-
-
-
-
-
-
-
-	<!-- Popular games section -->
-<!-- 	<h3 class="section-title">Similar games</h3>
-	<div class="row grid-container">
-	
-
-
-
-
- 
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/blumgi-rocket.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/blumgi-rocket.png" class="lazyload" alt="Blumgi Rocket"></div>
+        <div id="tooltipAnchor"><div id="tooltip" class="framed" onMouseOut="Game.tooltip.hide();"></div></div>
+        <div id="preloadImages" style="display: none;"></div>
+      </div>
     </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/crossy-road.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/crossy-road.png" class="lazyload" alt="Crossy Road"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/stickman-climb-2.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/stickman-climb-2.png" class="lazyload" alt="Stickman Climb 2"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/tunnel-rush.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/tunnel-rush.png" class="lazyload" alt="Tunnel Rush"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/rooftop-snipers-2.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/rooftop-snipers-2.png" class="lazyload" alt="Rooftop Snipers 2"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/temple-of-boom.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/temple-of-boom.png" class="lazyload" alt="Temple Of Boom"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/stick-merge.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/stick-merge.png" class="lazyload" alt="Stick Merge"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/monkey-mart.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/monkey-mart.png" class="lazyload" alt="Monkey Mart"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/brain-test-3-tricky-quests.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/brain-test-3-tricky-quests.png" class="lazyload" alt="Brain Test 3: Tricky Quests"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/burger-bounty.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/burger-bounty.png" class="lazyload" alt="Burger Bounty"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/sausage-flip.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/sausage-flip.png" class="lazyload" alt="Sausage Flip"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/gobble.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/gobble.png" class="lazyload" alt="Gobble"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/stacktris.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/stacktris.png" class="lazyload" alt="Stacktris"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/retro-bowl.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/retro-bowl.png" class="lazyload" alt="Retro Bowl"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/thumb-fighter-christmas.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/thumb-fighter-christmas.png" class="lazyload" alt="Thumb Fighter Christmas"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/raft-wars-2.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/raft-wars-2.png" class="lazyload" alt="Raft Wars 2"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/temple-run-2.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/temple-run-2.png" class="lazyload" alt="Temple Run 2"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/g-switch-3.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/g-switch-3.png" class="lazyload" alt="G Switch 3"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/blumgi-slime.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/blumgi-slime.png" class="lazyload" alt="Blumgi Slime"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/monster-tracks.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/monster-tracks.png" class="lazyload" alt="Monster Tracks"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/raft-wars.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/raft-wars.png" class="lazyload" alt="Raft Wars"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/stick-defenders.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/stick-defenders.png" class="lazyload" alt="Stick Defenders"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/blumgi-ball.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/blumgi-ball.png" class="lazyload" alt="Blumgi Ball"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/drive-mad.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/drive-mad.png" class="lazyload" alt="Drive Mad"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/blumgi-castle.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/blumgi-castle.png" class="lazyload" alt="Blumgi Castle"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/brain-test-tricky-puzzles.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/brain-test-tricky-puzzles.png" class="lazyload" alt="Brain Test: Tricky Puzzles"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/soccer-skills-euro-cup.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/soccer-skills-euro-cup.png" class="lazyload" alt="Soccer Skills Euro Cup"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/soccer-skills-world-cup.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/soccer-skills-world-cup.png" class="lazyload" alt="Soccer Skills World Cup"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/stickman-hook.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/stickman-hook.png" class="lazyload" alt="Stickman Hook"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/dreadhead-parkour.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/dreadhead-parkour.png" class="lazyload" alt="Dreadhead Parkour"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-
-
-
-
-
-</div>
- -->
-
- <!-- end Poplular -->
-
-
-
-	<!-- Random games section -->
-	
-	<!-- <h3 class="section-title">You may like</h3>
-	<div class="row grid-container">
-					
-
-
-
-
-	
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/duck-life-2-world-champion.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/duck-life-2-world-champion.png" class="lazyload" alt="Duck Life 2"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/8-ball-pool.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/8-ball-pool.png" class="lazyload" alt="8 Ball Pool"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/energy.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/energy.png" class="lazyload" alt="Energy"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/cannon-strike.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/cannon-strike.png" class="lazyload" alt="Cannon Strike"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/survivor-in-rainbow-monster.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/survivor-in-rainbow-monster.png" class="lazyload" alt="Survivor In Rainbow Monster"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/extreme-car-driving-simulator.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/extreme-car-driving-simulator.png" class="lazyload" alt="Extreme Car Driving Simulator"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/blocky-trials.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/blocky-trials.png" class="lazyload" alt="Blocky Trials"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/highway-racer-3d.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/highway-racer-3d.png" class="lazyload" alt="Highway Racer 3d"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/top-speed-3d.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/top-speed-3d.png" class="lazyload" alt="Top Speed 3d"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/cat-gunner-super-zombie-shoot.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/cat-gunner-super-zombie-shoot.png" class="lazyload" alt="Cat Gunner: Super Zombie Shoot"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/1v1-lol.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/1v1-lol.png" class="lazyload" alt="1v1 Lol"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="/go/burrito-bison.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://topvazstore.github.io/img/burrito-bison.png" class="lazyload" alt="Burrito Bison"></div>
-    </div>
-  </div>
-  </a>
-</div>
-
-
-
-
-
-
-
-
-
-</div> 
- -->
-
-<!-- end You May Like -->
-	<!-- 
-
-  <div class="banner-ad-wrapper">
-    <div class="banner-ad-content" style="padding: 20px 0; text-align: center;">
-
-
-
-
-
-
-    </div>
-  </div>  
-
-
-
-
-
-</div> 
-
- -->
-<!-- end container -->
-
-
-
-
-
-
-	<div class="footer-copyright py-4">
-		<div class="container">
-			DreadheadParkour.Github.io			<span class="dsb-panel">
-				 <a href="/dmca.html">DMCA</a> 			</span>
-		</div>
-	</div>
-	<script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
-	<script type="text/javascript" src="js/lazysizes.min.js"></script>
-	<script type="text/javascript" src="js/popper.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
-	  </body>
+  </body>
 </html>
